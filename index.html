@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F5C4D">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<title>ইসলামিক অ্যাপ</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#0F5C4D;--p2:#08483D;--gold:#C9A227;--bg:#F7F8F4;--card:#fff;--text:#17231F;--muted:#718078;--border:#E5EAE6;--tint:#EAF3EF;--s1:#FFF4DC;--s2:#FFE7BD;--d1:#FDEBE4;--d2:#F9D5C7;--sh:0 2px 10px rgba(15,60,50,.07)}
+:root[data-theme=dark]{--primary:#3BB08F;--bg:#0C1512;--card:#14201C;--text:#E9F0EC;--muted:#93A39B;--border:#22322C;--tint:#1B2C26;--gold:#D8B54A;--s1:#3A2F16;--s2:#2B2411;--d1:#3B2320;--d2:#2B1A19;--sh:0 2px 10px rgba(0,0,0,.3)}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden}
+body{font-family:'Noto Sans Bengali',sans-serif;background:var(--bg);color:var(--text)}
+.app{max-width:430px;height:100dvh;margin:0 auto;display:flex;flex-direction:column;background:var(--bg);position:relative;overflow:hidden}
+@media(min-width:501px){body{background:#dfe5e1;padding:16px 0}.app{height:min(880px,calc(100dvh - 32px));border-radius:32px;box-shadow:0 20px 50px rgba(0,0,0,.18)}}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+button{font-family:inherit;color:inherit;border:0;background:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.press{transition:transform .15s}.press:active{transform:scale(.96)}
+.top{display:flex;align-items:center;gap:8px;padding:calc(12px + env(safe-area-inset-top)) 14px 6px}
+.logo{width:42px;height:42px;border-radius:14px;object-fit:cover;flex:none;box-shadow:var(--sh)}
+.brand{flex:1;min-width:0}.brand b{display:block;font-size:14px;line-height:1.3}
+.brand small{display:block;font-size:11px;line-height:1.35;color:var(--muted)}
+.ib{width:40px;height:40px;border-radius:14px;display:grid;place-items:center;background:var(--card);box-shadow:var(--sh);color:var(--text)}
+.search{margin:6px 16px 10px;height:48px;display:flex;align-items:center;gap:10px;padding:0 16px;background:var(--card);border-radius:20px;box-shadow:var(--sh);color:var(--muted);border:1px solid transparent}
+.search:focus-within{border-color:var(--gold)}
+.search input{flex:1;min-width:0;border:0;outline:0;background:none;font:400 15px 'Noto Sans Bengali',sans-serif;color:var(--text)}
+.content{flex:1;overflow-y:auto;padding:2px 16px 16px;display:flex;flex-direction:column;gap:12px;scrollbar-width:none;animation:fade .25s}
+.content::-webkit-scrollbar{display:none}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.content>*{flex:none}
+.is-hidden{display:none!important}
+.hero,section.next{border-radius:14px;padding:8px 12px;color:#fff;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--primary),var(--p2))}
+:root[data-theme=dark] .hero,:root[data-theme=dark] .next{background:linear-gradient(135deg,#14654F,#0A3D33)}
+.hero::after,.next::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(45deg,rgba(255,255,255,.06) 0 1px,transparent 1px 16px),repeating-linear-gradient(-45deg,rgba(255,255,255,.06) 0 1px,transparent 1px 16px)}
+.hero>*,.next>*{position:relative;z-index:1}
+.hero{display:flex;align-items:center;gap:10px}
+.hero .moon{width:30px;height:30px;border-radius:50%;background:rgba(201,162,39,.2);color:var(--gold);display:grid;place-items:center;flex:none}
+.hero .moon .ic{width:18px;height:18px}
+.lbl{font-size:11px;opacity:.8}.big{font-size:14px;font-weight:700;line-height:1.3}.sub{font-size:12px;opacity:.9}
+.next:not(.prayer-box) .lbl{color:var(--gold);opacity:1;font-weight:600}
+.next:not(.prayer-box) .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:0 0 6px}
+.next:not(.prayer-box) .name{font-size:17px;font-weight:700}.next:not(.prayer-box) .time{font-size:15px;font-weight:700;color:var(--gold);white-space:nowrap}
+.bar{height:4px;border-radius:6px;background:rgba(255,255,255,.2);overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,var(--gold),#E6C75A);transition:width .4s}
+.next:not(.prayer-box) .left{font-size:11px;margin-top:4px;opacity:.9}
+.sec{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.sec h2{font-size:15px;font-weight:700}
+.link{font-size:13px;font-weight:600;color:var(--primary);min-height:32px;padding:0 4px}
+.prayer-row{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.prayer-box{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:8px 2px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0;color:var(--muted);transition:.2s}
+.prayer-box .name{font-size:12px;font-weight:600;color:var(--text)}.prayer-box .time{font-size:11px;font-weight:600;white-space:nowrap}
+.prayer-box.past{opacity:.5}
+.prayer-box.next{background:var(--primary);border-color:var(--primary);color:var(--gold);box-shadow:0 6px 14px rgba(15,92,77,.3)}
+.prayer-box.next .name,.prayer-box.next .time{color:#fff}
+:root[data-theme=dark] .prayer-box.next{background:#14654F}
+.qgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.qa{background:var(--card);border-radius:18px;box-shadow:var(--sh);padding:8px 4px;min-height:70px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-size:12px;font-weight:600}
+.qa .ic{width:36px;height:36px;padding:8px;border-radius:14px;background:var(--tint);color:var(--primary)}
+.srow{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;margin:0 -16px;padding:0 16px 4px}
+.srow::-webkit-scrollbar{display:none}
+.sc{scroll-snap-align:start;flex:none;min-width:96px;min-height:70px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:10px 12px;display:flex;flex-direction:column;align-items:flex-start;gap:6px;font-size:13px;font-weight:600;box-shadow:var(--sh)}
+.sc .ic{color:var(--gold);width:22px;height:22px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sun{border-radius:16px;padding:10px 12px;display:flex;flex-direction:column;gap:4px}
+.sun.a{background:linear-gradient(135deg,var(--s1),var(--s2))}.sun.b{background:linear-gradient(135deg,var(--d1),var(--d2))}
+.sun .h{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600}.sun .h .ic{color:#C77B1A}
+.sun .time{font-size:16px;font-weight:700}
+.date-card{background:var(--card);border-radius:16px;padding:12px;box-shadow:var(--sh);text-align:center;display:flex;flex-direction:column;gap:2px}
+.date-card .hijri{font-size:15px;font-weight:700;color:var(--primary)}.date-card .bangla{font-size:13px}
+.date-card .english{font-size:13px;color:var(--muted)}.date-card .dv{height:1px;background:var(--border);margin:6px 24px}
+.placeholder{align-items:center;justify-content:center;text-align:center;gap:10px}
+.placeholder .ring{width:96px;height:96px;border-radius:50%;background:var(--tint);display:grid;place-items:center;font-size:44px}
+.placeholder .ttl{font-size:20px;font-weight:700}.placeholder .msg{font-size:14px;color:var(--muted)}
+.nav{display:flex;background:var(--card);border-top:1px solid var(--border);padding:6px 6px calc(6px + env(safe-area-inset-bottom))}
+.nav-ic{flex:1;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:12px;font-weight:600;color:var(--muted);border-radius:14px;position:relative;transition:color .2s}
+.nav-ic:active{transform:scale(.94)}.nav-ic.active{color:var(--primary)}
+.nav-ic::before{content:"";position:absolute;top:-6px;width:0;height:3px;border-radius:3px;background:var(--gold);transition:width .2s}
+.nav-ic.active::before{width:28px}
+.toast{position:absolute;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));transform:translate(-50%,10px);background:#1e293b;color:#fff;font-size:13px;padding:10px 16px;border-radius:16px;opacity:0;pointer-events:none;transition:.2s;max-width:90%;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.list{display:flex;flex-direction:column;gap:10px}
+.li{background:var(--card);border-radius:14px;box-shadow:var(--sh);padding:12px;display:flex;align-items:center;gap:12px;width:100%;text-align:left}
+.li:active{background:var(--tint)}
+.qno{width:32px;height:32px;flex:none;background:var(--tint);color:var(--primary);display:grid;place-items:center;border-radius:8px;font-weight:700;font-size:13px}
+.qm{flex:1;min-width:0}.qm b{display:block;font-size:15px}.qm span{font-size:12px;color:var(--muted)}
+.qar{font-family:serif;font-size:18px;color:var(--primary)}
+.reader{--rbg:#FBF5E4;--rline:#E8DFC4;--rtxt:#1F2A24;--rmut:#6B6A5A;position:absolute;inset:0;background:var(--rbg);z-index:50;display:flex;flex-direction:column}
+:root[data-theme=dark] .reader{--rbg:#0C1512;--rline:#22322C;--rtxt:#E9F0EC;--rmut:#93A39B}
+.rtop{display:flex;align-items:center;gap:12px;padding:calc(12px + env(safe-area-inset-top)) 16px 12px;background:linear-gradient(135deg,var(--primary),var(--p2));color:#fff;box-shadow:0 2px 10px rgba(8,72,61,.25);font-size:16px}
+.rtop .ib{background:rgba(255,255,255,.16);color:#fff;box-shadow:none;width:40px;height:40px}
+.rbody{flex:1;overflow-y:auto;padding:8px 16px 24px;font-size:14px;color:var(--rmut)}
+.bism{text-align:center;direction:rtl;font-family:serif;font-size:26px;line-height:2;color:var(--primary);padding:22px 0 18px;margin-bottom:4px;border-bottom:1px solid var(--rline)}
+.verse{padding:14px 0;border-bottom:1px solid var(--rline)}
+.v-ar{text-align:right;direction:rtl;font-size:24px;line-height:1.9;font-family:serif;color:var(--rtxt)}
+.v-bn{font-size:14px;color:var(--rmut);line-height:1.5;margin-top:8px}
+.tcard{background:var(--card);border-radius:20px;padding:24px;text-align:center;box-shadow:var(--sh);display:flex;flex-direction:column;align-items:center;gap:8px}
+.tcount{font-size:60px;font-weight:700;color:var(--primary);line-height:1.2}
+.tbtn{width:120px;height:120px;border-radius:50%;background:var(--primary);color:#fff;font-size:16px;font-weight:600;box-shadow:0 10px 20px rgba(15,92,77,.3);margin:8px 0}
+.compass{width:220px;height:220px;margin:24px auto;background:var(--card);border-radius:50%;box-shadow:var(--sh);display:grid;place-items:center}
+.arrow{width:4px;height:160px;background:var(--muted);border-radius:4px;position:relative;transition:transform .2s}
+.arrow::before{content:"";position:absolute;top:-4px;left:-8px;border:10px solid transparent;border-top:0;border-bottom:20px solid var(--gold)}
+.cap{text-align:center;font-size:13px;color:var(--muted)}
+@media(max-width:340px){.qa{font-size:12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/></symbol>
+<symbol id="i-theme" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+<symbol id="i-sun2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"/><path d="M5 5l1.6 1.6M17.4 17.4L19 19M5 19l1.6-1.6M17.4 6.6L19 5"/></symbol>
+<symbol id="i-sunrise" viewBox="0 0 24 24"><path d="M17 18a5 5 0 0 0-10 0M12 3v6M4.2 10.2l1.4 1.4M1 18h2M21 18h2M18.4 11.6l1.4-1.4M23 22H1M8 6l4-3 4 3"/></symbol>
+<symbol id="i-sunset" viewBox="0 0 24 24"><path d="M17 18a5 5 0 0 0-10 0M12 9V3M4.2 10.2l1.4 1.4M1 18h2M21 18h2M18.4 11.6l1.4-1.4M23 22H1M16 6l-4 3-4-3"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM9 22V12h6v10"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+<symbol id="i-dua" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+<symbol id="i-tasbih" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke-width="3.4" stroke-dasharray="0.1 5.1"/><path d="M12 20v2"/></symbol>
+<symbol id="i-qibla" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2.1 6.3-6.3 2.1 2.1-6.3z"/></symbol>
+<symbol id="i-more" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+</defs></svg>
+<div class="app">
+<header class="top">
+ <img class="logo" src="data:image/png;base64,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" alt="ইসলামিক অ্যাপ লোগো" width="42" height="42">
+ <div class="brand"><b>ইসলামিক অ্যাপ</b><small><span class="js-bn-short"></span> · <span class="js-loc">কলকাতা</span></small></div>
+ <button class="ib press" data-toast="নোটিফিকেশন" aria-label="নোটিফিকেশন"><svg class="ic" aria-hidden="true"><use href="#i-bell"/></svg></button>
+ <button class="ib press" id="theme-btn" aria-label="থিম পরিবর্তন"><svg class="ic" aria-hidden="true"><use href="#i-theme"/></svg></button>
+</header>
+<label class="search"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg><input type="search" placeholder="Search করুন..." aria-label="Search"></label>
+<main class="content" id="home">
+ <section class="hero"><div class="moon"><svg class="ic" aria-hidden="true"><use href="#i-moon"/></svg></div><div><div class="lbl">আজকের দিন</div><div class="big js-hijri"></div><div class="sub js-hday"></div></div></section>
+ <section class="next"><div class="lbl">পরবর্তী নামাজ</div><div class="row"><div class="name js-np-name">—</div><div class="time js-np-time">--:--</div></div><div class="bar"><i id="np-bar"></i></div><div class="left js-np-left">সময় লোড হচ্ছে...</div></section>
+ <section><div class="sec"><h2>নামাজের সময়</h2><button class="link" data-toast="নামাজ">নামাজ ›</button></div>
+ <div class="prayer-row"><div class="prayer-box" data-key="fajr"><svg class="ic" aria-hidden="true"><use href="#i-sunrise"/></svg><div class="name">ফজর</div><div class="time">০৩:৪১</div></div><div class="prayer-box" data-key="dhuhr"><svg class="ic" aria-hidden="true"><use href="#i-sun"/></svg><div class="name">যুহর</div><div class="time">১১:৪৫</div></div><div class="prayer-box" data-key="asr"><svg class="ic" aria-hidden="true"><use href="#i-sun2"/></svg><div class="name">আসর</div><div class="time">০৪:২২</div></div><div class="prayer-box" data-key="maghrib"><svg class="ic" aria-hidden="true"><use href="#i-sunset"/></svg><div class="name">মাগরিব</div><div class="time">০৬:২৩</div></div><div class="prayer-box" data-key="isha"><svg class="ic" aria-hidden="true"><use href="#i-moon"/></svg><div class="name">ইশা</div><div class="time">০৭:৪৬</div></div></div></section>
+ <section><div class="sec"><h2>দ্রুত ব্যবহার</h2></div><div class="qgrid"><button class="qa press" data-go="quran"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg><span>কুরআন</span></button><button class="qa press" data-go="dua"><svg class="ic" aria-hidden="true"><use href="#i-dua"/></svg><span>দোয়া</span></button><button class="qa press" data-go="tasbih"><svg class="ic" aria-hidden="true"><use href="#i-tasbih"/></svg><span>তাসবিহ</span></button><button class="qa press" data-go="qibla"><svg class="ic" aria-hidden="true"><use href="#i-qibla"/></svg><span>কিবলা</span></button></div></section>
+ <section><div class="sec"><h2>সূরা</h2><button class="link" data-toast="নিয়মাবলী">নিয়মাবলী ›</button></div><div class="srow"><button class="sc press" data-surah="112"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg><span>আল ইখলাস</span></button><button class="sc press" data-surah="113"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg><span>আল ফালাক</span></button><button class="sc press" data-surah="114"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg><span>আন নাস</span></button><button class="sc press" data-surah="67"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg><span>আল মুলক</span></button></div></section>
+ <section class="two">
+  <div class="sun a"><div class="h"><svg class="ic" aria-hidden="true"><use href="#i-sunrise"/></svg>সূর্যোদয়</div><div class="time" id="sunrise">--</div></div>
+  <div class="sun b"><div class="h"><svg class="ic" aria-hidden="true"><use href="#i-sunset"/></svg>সূর্যাস্ত</div><div class="time" id="sunset">--</div></div>
+ </section>
+ <section class="date-card"><div class="hijri js-hijri"></div><div class="bangla js-wd"></div><div class="dv"></div><div class="bangla js-bangla"></div><div class="english js-english"></div></section>
+</main>
+<main class="content is-hidden" id="v-quran"><div class="list" id="surah-list"></div></main>
+<main class="content is-hidden" id="v-dua"><div class="list"><div class="li"><div class="qm"><b>ঘুম থেকে ওঠার দুয়া</b><span>আলহামদু লিল্লাহিল্লাজি আহইয়ানা...</span></div></div><div class="li"><div class="qm"><b>মসজিদে প্রবেশের দুয়া</b><span>আল্লাহুম্মাফ তাহলি আবওয়াবা রাহমাতিকা</span></div></div></div></main>
+<main class="content is-hidden" id="v-tasbih"><div class="tcard"><div class="lbl" style="color:var(--muted)">সুবহানআল্লাহ</div><div class="tcount" id="t-count">০</div><button class="tbtn press" id="t-btn">গণনা করুন</button><button class="link" id="t-reset">রিসেট</button></div></main>
+<main class="content is-hidden" id="v-qibla"><div class="sec" style="justify-content:center"><h2>কিবলা কম্পাস</h2></div><div class="compass"><div class="arrow" id="arrow"></div></div><p class="cap">মোবাইলটি সমতলে রেখে সঠিক দিক দেখুন</p></main>
+<main class="content placeholder is-hidden" id="placeholder"><div class="ring" id="ph-icon"></div><div class="ttl" id="ph-title"></div><div class="msg">আপনার জন্য শীঘ্রই আসছে</div></main>
+<nav class="nav" id="navbar"><button class="nav-ic active" data-tab="home" data-icon="🏠" data-title="হোম" aria-label="হোম"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg><span>হোম</span></button><button class="nav-ic" data-tab="quran" data-icon="📖" data-title="কুরআন" aria-label="কুরআন"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg><span>কুরআন</span></button><button class="nav-ic" data-tab="dua" data-icon="🤲" data-title="দোয়া" aria-label="দোয়া"><svg class="ic" aria-hidden="true"><use href="#i-dua"/></svg><span>দোয়া</span></button><button class="nav-ic" data-tab="qibla" data-icon="🧭" data-title="কিবলা" aria-label="কিবলা"><svg class="ic" aria-hidden="true"><use href="#i-qibla"/></svg><span>কিবলা</span></button><button class="nav-ic" data-tab="more" data-icon="✨" data-title="আরও" aria-label="আরও"><svg class="ic" aria-hidden="true"><use href="#i-more"/></svg><span>আরও</span></button></nav>
+<div class="reader is-hidden" id="reader"><div class="rtop"><button class="ib press" id="r-back" aria-label="ফিরে যান">←</button><b id="r-title"></b></div><div class="rbody" id="r-body"></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  // ---------- Helpers ----------
+  var BN_DIGITS = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+  function bn(value) {
+    return String(value).replace(/\d/g, function (d) { return BN_DIGITS[d]; });
+  }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+
+  var BN_WEEKDAYS = ['রবিবার','সোমবার','মঙ্গলবার','বুধবার','বৃহস্পতিবার','শুক্রবার','শনিবার'];
+  var HIJRI_WEEKDAYS = ['ইয়াওমুল আহাদ','ইয়াওমুল ইছনাইন','ইয়াওমুছ ছুলাছা','ইয়াওমুল আরবিয়া','ইয়াওমুল খামিস','ইয়াওমুল জুমা','ইয়াওমুছ ছাবত'];
+  var HIJRI_MONTHS = ['মুহাররম','সফর','রবিউল আউয়াল','রবিউস সানি','জমাদিউল আউয়াল','জমাদিউস সানি','রজব','শাবান','রমজান','শাওয়াল','জিলকদ','জিলহজ'];
+  var BANGLA_MONTHS = ['বৈশাখ','জ্যৈষ্ঠ','আষাঢ়','শ্রাবণ','ভাদ্র','আশ্বিন','কার্তিক','অগ্রহায়ণ','পৌষ','মাঘ','ফাল্গুন','চৈত্র'];
+  var EN_WEEKDAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var EN_MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+  // ---------- Dates ----------
+  function isLeap(y) { return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0; }
+
+  // West Bengal Bangla calendar: month = sidereal zodiac sign of the Sun.
+  // A month starts on the civil date after the Sun's ingress (sankranti), in IST.
+  function sunSiderealLongitude(utcMs) {
+    var jd = utcMs / 86400000 + 2440587.5;
+    var T = (jd - 2451545.0) / 36525;
+    var rad = Math.PI / 180;
+    var L0 = 280.46646 + 36000.76983 * T;
+    var M = (357.52911 + 35999.05029 * T) * rad;
+    var C = (1.914602 - 0.004817 * T) * Math.sin(M) + 0.019993 * Math.sin(2 * M) + 0.000289 * Math.sin(3 * M);
+    var apparent = L0 + C - 0.00569 - 0.00478 * Math.sin((125.04 - 1934.136 * T) * rad);
+    var ayanamsa = 23.853 + 0.013969 * (2000 + T * 100 - 2000); // Lahiri, approx.
+    var lon = (apparent - ayanamsa) % 360;
+    return lon < 0 ? lon + 360 : lon;
+  }
+  var IST_MS = 5.5 * 3600000;
+  // month index (0 = Boishakh) for a civil date given as UTC-based y/m/d
+  function banglaMonthIndex(y, m, d) {
+    var istMidnightUtc = Date.UTC(y, m, d) - IST_MS;
+    return Math.floor(sunSiderealLongitude(istMidnightUtc) / 30) % 12;
+  }
+  function banglaDate(date) {
+    var y = date.getFullYear(), m = date.getMonth(), d = date.getDate();
+    var idx = banglaMonthIndex(y, m, d);
+    var day = 1, k = 1;
+    while (k < 40) {
+      var p = new Date(Date.UTC(y, m, d - k));
+      if (banglaMonthIndex(p.getUTCFullYear(), p.getUTCMonth(), p.getUTCDate()) !== idx) break;
+      day++; k++;
+    }
+    var year = (m <= 3 && idx >= 8) ? y - 594 : y - 593;
+    return { day: day, month: idx, year: year };
+  }
+
+  // Hijri date from the browser's Umm al-Qura calendar, shifted for India's moon sighting
+  var HIJRI_OFFSET_DAYS = -1; // Saudi date minus 1 (India usually sights the moon a day later)
+  function hijriFallback(date) {
+    try {
+      var shifted = new Date(date.getTime() + HIJRI_OFFSET_DAYS * 86400000);
+      var parts = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura', { day: 'numeric', month: 'numeric', year: 'numeric' }).formatToParts(shifted);
+      var r = {};
+      parts.forEach(function (p) { r[p.type] = parseInt(p.value, 10); });
+      return { day: r.day, month: r.month, year: r.year };
+    } catch (e) { return null; }
+  }
+
+  function setAll(sel, txt) { document.querySelectorAll(sel).forEach(function (e) { e.textContent = txt; }); }
+  function renderDates() {
+    var now = new Date(), h = hijriFallback(now), wd = now.getDay(), b = banglaDate(now);
+    if (h) setAll('.js-hijri', bn(h.day) + ' ' + HIJRI_MONTHS[h.month - 1] + ' ' + bn(h.year) + ' হি.');
+    setAll('.js-hday', HIJRI_WEEKDAYS[wd]);
+    setAll('.js-wd', BN_WEEKDAYS[wd]);
+    setAll('.js-bangla', bn(b.day) + ' ' + BANGLA_MONTHS[b.month] + ' ' + bn(b.year) + ' বঙ্গাব্দ');
+    setAll('.js-bn-short', bn(b.day) + ' ' + BANGLA_MONTHS[b.month]);
+    setAll('.js-english', EN_WEEKDAYS[wd] + ', ' + EN_MONTHS[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear());
+  }
+
+  // ---------- Prayer times ----------
+  var KEYS = ['fajr', 'dhuhr', 'asr', 'maghrib', 'isha'];
+  var times = null; // { fajr: 'HH:MM', ..., sunrise, sunset }
+
+  function to12h(hhmm) {
+    var p = hhmm.split(':');
+    var h = parseInt(p[0], 10), m = parseInt(p[1], 10);
+    var h12 = h % 12 === 0 ? 12 : h % 12;
+    return { text: bn(pad2(h12) + ':' + pad2(m)), minutes: h * 60 + m };
+  }
+
+  function ampm(hhmm) { return parseInt(hhmm, 10) < 12 ? ' AM' : ' PM'; }
+
+  function renderTimes() {
+    if (!times) return;
+    KEYS.forEach(function (k) {
+      var el = document.querySelector('.prayer-box[data-key="' + k + '"] .time');
+      el.textContent = to12h(times[k]).text;
+    });
+    var sr = to12h(times.sunrise).text.replace(/^০/, '') + ampm(times.sunrise);
+    var ss = to12h(times.sunset).text.replace(/^০/, '') + ampm(times.sunset);
+    document.getElementById('sunrise').textContent = sr;
+    document.getElementById('sunset').textContent = ss;
+    highlightNext();
+  }
+
+  // Highlight the upcoming prayer, mute past ones, update the next-prayer card
+  function highlightNext() {
+    if (!times) return;
+    var now = new Date(), nowMin = now.getHours() * 60 + now.getMinutes();
+    var mins = KEYS.map(function (k) { return to12h(times[k]).minutes; });
+    var idx = mins.findIndex(function (m) { return m > nowMin; });
+    var tomorrow = idx < 0;
+    if (tomorrow) idx = 0;
+    var nextMin = mins[idx] + (tomorrow ? 1440 : 0);
+    var prevMin = tomorrow ? mins[4] : (idx > 0 ? mins[idx - 1] : mins[4] - 1440);
+    document.querySelectorAll('.prayer-box').forEach(function (box, i) {
+      var on = i === idx;
+      box.classList.toggle('selected', on);
+      box.classList.toggle('next', on);
+      box.classList.toggle('past', !on && mins[i] <= nowMin);
+    });
+    var left = nextMin - nowMin, hh = Math.floor(left / 60), mm = left % 60;
+    setAll('.js-np-name', document.querySelectorAll('.prayer-box .name')[idx].textContent);
+    setAll('.js-np-time', to12h(times[KEYS[idx]]).text + ampm(times[KEYS[idx]]));
+    setAll('.js-np-left', 'আর ' + (hh ? bn(hh) + ' ঘণ্টা ' : '') + bn(mm) + ' মিনিট বাকি');
+    var pct = (nowMin - prevMin) / (nextMin - prevMin) * 100;
+    document.getElementById('np-bar').style.width = Math.max(0, Math.min(100, pct)) + '%';
+  }
+
+  function clean(t) { return String(t).split(' ')[0]; } // strip "(BST)" suffix
+
+  function loadTimes(lat, lng) {
+    var d = new Date();
+    var dateStr = pad2(d.getDate()) + '-' + pad2(d.getMonth() + 1) + '-' + d.getFullYear();
+    // method 1 = Univ. of Islamic Sciences, Karachi; school 1 = Hanafi Asr (common in India)
+    var url = 'https://api.aladhan.com/v1/timings/' + dateStr + '?latitude=' + lat + '&longitude=' + lng + '&method=1&school=1';
+    fetch(url)
+      .then(function (r) { return r.json(); })
+      .then(function (json) {
+        var t = json.data.timings;
+        times = {
+          fajr: clean(t.Fajr), dhuhr: clean(t.Dhuhr), asr: clean(t.Asr),
+          maghrib: clean(t.Maghrib), isha: clean(t.Isha),
+          sunrise: clean(t.Sunrise), sunset: clean(t.Sunset)
+        };
+        renderTimes();
+        renderDates();
+        try { localStorage.setItem('pt-cache-in', JSON.stringify({ date: dateStr, times: times })); } catch (e) {}
+      })
+      .catch(function () {
+        if (!times) {
+          times = { fajr: '04:14', dhuhr: '11:26', asr: '15:52', maghrib: '17:25', isha: '18:42', sunrise: '05:36', sunset: '17:25' };
+          renderTimes();
+        }
+        toast('নমুনা সময় দেখানো হচ্ছে');
+      });
+  }
+
+  function init() {
+    // Use cached data for today while the request is in flight
+    try {
+      var c = JSON.parse(localStorage.getItem('pt-cache-in') || 'null');
+      var d = new Date();
+      var today = pad2(d.getDate()) + '-' + pad2(d.getMonth() + 1) + '-' + d.getFullYear();
+      if (c && c.date === today) { times = c.times; renderTimes(); }
+    } catch (e) {}
+
+    var DEFAULT_CITY = { lat: 22.5726, lng: 88.3639 }; // Kolkata
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        function (pos) { loc = { lat: pos.coords.latitude, lng: pos.coords.longitude }; setAll('.js-loc', 'আপনার এলাকা'); loadTimes(pos.coords.latitude, pos.coords.longitude); },
+        function () { setAll('.js-loc', 'কলকাতা'); loadTimes(DEFAULT_CITY.lat, DEFAULT_CITY.lng); },
+        { timeout: 6000, maximumAge: 3600000 }
+      );
+    } else {
+      loadTimes(DEFAULT_CITY.lat, DEFAULT_CITY.lng);
+    }
+  }
+
+  // ---------- Toast ----------
+  var toastTimer = null;
+  function toast(msg) {
+    var el = document.getElementById('toast');
+    el.textContent = msg;
+    el.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.classList.remove('show'); }, 1600);
+  }
+
+  document.querySelectorAll('[data-toast]').forEach(function (el) {
+    el.addEventListener('click', function () { toast(el.getAttribute('data-toast') + ' — শীঘ্রই আসছে'); });
+  });
+
+  // ---------- Views / navigation ----------
+  var home = document.getElementById('home');
+  var placeholder = document.getElementById('placeholder');
+  var loc = { lat: 22.5726, lng: 88.3639 };
+  function go(tab) {
+    document.querySelectorAll('#navbar .nav-ic').forEach(function (t) { t.classList.toggle('active', t.getAttribute('data-tab') === tab); });
+    document.querySelectorAll('main.content').forEach(function (m) { m.classList.add('is-hidden'); });
+    var el = tab === 'home' ? home : document.getElementById('v-' + tab);
+    if (!el) {
+      var t = document.querySelector('#navbar [data-tab="' + tab + '"]');
+      document.getElementById('ph-icon').textContent = t.getAttribute('data-icon');
+      document.getElementById('ph-title').textContent = t.getAttribute('data-title');
+      el = placeholder;
+    }
+    el.classList.remove('is-hidden');
+    closeReader();
+    if (tab === 'quran') loadSurahs();
+    if (tab === 'qibla') startCompass();
+  }
+  document.querySelectorAll('#navbar .nav-ic').forEach(function (tab) {
+    tab.addEventListener('click', function () { go(tab.getAttribute('data-tab')); });
+  });
+  document.querySelectorAll('[data-go]').forEach(function (b) {
+    b.addEventListener('click', function () { go(b.getAttribute('data-go')); });
+  });
+
+  // ---------- Quran ----------
+  var surahs = [];
+  var FALLBACK = [
+    { number: 1, name: 'الفاتحة', englishName: 'Al-Fatiha', revelationType: 'Meccan', numberOfAyahs: 7 },
+    { number: 67, name: 'الملك', englishName: 'Al-Mulk', revelationType: 'Meccan', numberOfAyahs: 30 },
+    { number: 112, name: 'الإخلاص', englishName: 'Al-Ikhlas', revelationType: 'Meccan', numberOfAyahs: 4 },
+    { number: 113, name: 'الفلق', englishName: 'Al-Falaq', revelationType: 'Meccan', numberOfAyahs: 5 },
+    { number: 114, name: 'الناس', englishName: 'An-Nas', revelationType: 'Meccan', numberOfAyahs: 6 }
+  ];
+  function renderSurahs() {
+    var term = document.querySelector('.search input').value.trim().toLowerCase();
+    var list = surahs.filter(function (s) { return !term || s.englishName.toLowerCase().indexOf(term) > -1 || s.name.indexOf(term) > -1; });
+    document.getElementById('surah-list').innerHTML = list.map(function (s) {
+      return '<button class="li press" data-n="' + s.number + '" data-t="' + s.name + '"><div class="qno">' + bn(s.number) + '</div>' +
+        '<div class="qm"><b>' + s.englishName + '</b><span>' + (s.revelationType === 'Meccan' ? 'মক্কী' : 'মাদানী') + ' • আয়াত ' + bn(s.numberOfAyahs) + '</span></div>' +
+        '<div class="qar">' + s.name + '</div></button>';
+    }).join('');
+  }
+  function loadSurahs() {
+    if (surahs.length) return renderSurahs();
+    fetch('https://api.alquran.cloud/v1/surah').then(function (r) { return r.json(); })
+      .then(function (j) { surahs = j.data; renderSurahs(); })
+      .catch(function () { surahs = FALLBACK; renderSurahs(); toast('অনলাইন তালিকা লোড হয়নি, কিছু সূরা দেখানো হচ্ছে'); });
+  }
+  document.getElementById('surah-list').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-n]');
+    if (b) readSurah(b.getAttribute('data-n'), b.getAttribute('data-t'));
+  });
+  document.querySelectorAll('[data-surah]').forEach(function (b) {
+    b.addEventListener('click', function () { readSurah(b.getAttribute('data-surah'), b.textContent.trim()); });
+  });
+  function readSurah(num, title) {
+    var body = document.getElementById('r-body');
+    document.getElementById('r-title').textContent = title;
+    document.getElementById('reader').classList.remove('is-hidden');
+    body.textContent = 'লোডিং...';
+    fetch('https://api.alquran.cloud/v1/surah/' + num + '/editions/quran-uthmani,bn.bengali').then(function (r) { return r.json(); })
+      .then(function (j) {
+        var ar = j.data[0].ayahs, tr = j.data[1].ayahs, bism = '';
+        // The API glues the Bismillah onto Ayah 1 (except Al-Fatiha, where it is Ayah 1, and At-Tawba, which has none).
+        // Split it off so it is shown as its own section and Ayah 1 keeps only its own text.
+        var n = parseInt(num, 10);
+        if (n === 1) {   // Al-Fatiha: API counts Bismillah as Ayah 1 - show it separately, unnumbered
+          ar = ar.slice(1); tr = tr.slice(1);
+          bism = '<div class="bism">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>';
+        } else if (n !== 9) {
+          var w = ar[0].text.split(' ');
+          var first = w[0].replace(/[\u064B-\u065F\u0670\u06D6-\u06ED\u0640]/g, '');
+          if (first === 'بسم' && w.length > 4) {
+            ar[0] = { text: w.slice(4).join(' ') };
+            bism = '<div class="bism">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>';
+          }
+        }
+        body.innerHTML = bism + ar.map(function (a, i) {
+          return '<div class="verse"><div class="v-ar">' + a.text + ' <span style="color:var(--gold)">(' + bn(i + 1) + ')</span></div><div class="v-bn">' + tr[i].text + '</div></div>';
+        }).join('');
+        body.scrollTop = 0;
+      })
+      .catch(function () { body.textContent = 'লোড করতে ব্যর্থ হয়েছে। ইন্টারনেট সংযোগ চেক করুন।'; });
+  }
+  function closeReader() { document.getElementById('reader').classList.add('is-hidden'); }
+  document.getElementById('r-back').addEventListener('click', closeReader);
+  document.querySelector('.search input').addEventListener('input', function () {
+    if (document.getElementById('v-quran').classList.contains('is-hidden')) go('quran'); else renderSurahs();
+  });
+
+  // ---------- Tasbih ----------
+  var tCount = 0;
+  document.getElementById('t-btn').addEventListener('click', function () {
+    tCount++; document.getElementById('t-count').textContent = bn(tCount);
+    if (navigator.vibrate) navigator.vibrate(40);
+  });
+  document.getElementById('t-reset').addEventListener('click', function () { tCount = 0; document.getElementById('t-count').textContent = '০'; });
+
+  // ---------- Qibla ----------
+  function qiblaBearing() {
+    var r = Math.PI / 180, dl = (39.8262 - loc.lng) * r, p1 = loc.lat * r, p2 = 21.4225 * r;
+    var y = Math.sin(dl) * Math.cos(p2), x = Math.cos(p1) * Math.sin(p2) - Math.sin(p1) * Math.cos(p2) * Math.cos(dl);
+    return (Math.atan2(y, x) / r + 360) % 360;
+  }
+  var compassOn = false;
+  function startCompass() {
+    var arrow = document.getElementById('arrow');
+    arrow.style.transform = 'rotate(' + qiblaBearing() + 'deg)';
+    if (compassOn) return;
+    if (!window.DeviceOrientationEvent) { toast('কম্পাস আপনার ডিভাইসে সাপোর্ট করছে না'); return; }
+    compassOn = true;
+    function h(e) {
+      if (!e.absolute && e.webkitCompassHeading == null) return;
+      var hd = e.webkitCompassHeading != null ? e.webkitCompassHeading : (e.alpha != null ? 360 - e.alpha : null);
+      if (hd != null) arrow.style.transform = 'rotate(' + (qiblaBearing() - hd) + 'deg)';
+    }
+    window.addEventListener('deviceorientationabsolute', h);
+    window.addEventListener('deviceorientation', h);
+  }
+
+  // ---------- Theme (light/dark) ----------
+  var root = document.documentElement;
+  var theme = null;
+  try { theme = localStorage.getItem('theme'); } catch (e) {}
+  if (!theme && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dark';
+  if (theme) root.setAttribute('data-theme', theme);
+  document.getElementById('theme-btn').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    toast(next === 'dark' ? 'ডার্ক মোড' : 'লাইট মোড');
+  });
+
+  // ---------- Start ----------
+  renderDates();
+  init();
+  setInterval(function () { renderDates(); highlightNext(); }, 30000);
+})();
+</script>
+</body>
+</html>
